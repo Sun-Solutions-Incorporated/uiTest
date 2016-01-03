@@ -2,6 +2,7 @@ package tecotaku.cn.myapplication;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -71,6 +72,13 @@ public class MainActivity extends ActionBarActivity {
         loadingtext = (TextView) findViewById(R.id.loading_text);
         fab1 = (TextView) findViewById(R.id.fab);
         fab2 = (TextView) findViewById(R.id.fab2);
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
         fab1.setTranslationY(1000); //将fab1移出屏幕
         loading_height = dip2px(MainActivity.this,200); //因为我们的布局单位是dip但是这里的显示单位是px 所以高度我们都需要进行转换 转换方式见dip2px
         height = dip2px(MainActivity.this,80);

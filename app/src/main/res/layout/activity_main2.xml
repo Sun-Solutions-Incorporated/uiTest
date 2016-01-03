@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ccc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tecotaku.cn.myapplication.Main2Activity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/aa"
+        android:background="#000"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@id/aa"
+        android:id="@+id/sdf"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:background="#ffffff" />
+    </LinearLayout>
+    <tecotaku.cn.myapplication.MShadom
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/shadow"
+        android:layout_height="300dp"/>
+</RelativeLayout>
